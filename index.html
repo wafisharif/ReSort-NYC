@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicSort AI | Code the City Greener</title>
+  <meta name="description" content="CivicSort AI is a smart urban waste-sorting system for cities like NYC, combining physical separation, computer vision, robotics, and data analytics to reduce contamination and improve sustainability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark">C</div>
+        <div>
+          <div class="brand-name">CivicSort AI</div>
+          <div class="brand-tag">Smarter recycling for smarter cities</div>
+        </div>
+      </div>
+
+      <nav class="desktop-nav">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#how">How It Works</a>
+        <a href="#impact">Impact</a>
+        <a href="#demo">Demo</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#how">How It Works</a>
+      <a href="#impact">Impact</a>
+      <a href="#demo">Demo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Createathon 2026 • Code the City Greener</div>
+          <h1>
+            CivicSort AI
+          </h1>
+          <p class="hero-subtext">
+            An AI-powered urban waste sorting system that helps cities like New York recycle more accurately,
+            reduce contamination, and cut landfill waste—without asking residents to do extra work.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#solution" class="btn btn-primary">See the Solution</a>
+            <a href="#demo" class="btn btn-secondary">View Demo</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-number">Mixed Waste In</div>
+              <div class="stat-label">No manual sorting required</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">AI + Robotics</div>
+              <div class="stat-label">Automated material recognition</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">Cleaner Streams Out</div>
+              <div class="stat-label">Higher recycling quality</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="city-card glass">
+            <div class="city-top">
+              <span class="city-dot green"></span>
+              <span class="city-dot yellow"></span>
+              <span class="city-dot red"></span>
+            </div>
+
+            <div class="diagram">
+              <div class="diagram-title">System Flow</div>
+              <div class="flow-row">
+                <div class="flow-box">Mixed Trash</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">Magnetic Separator</div>
+              </div>
+              <div class="flow-row">
+                <div class="flow-box">Vision Camera + AI</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">Robotic Arm</div>
+              </div>
+              <div class="flow-row">
+                <div class="flow-box">Sorted Recycling</div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">Human QA Lane</div>
+              </div>
+              <div class="flow-footer">
+                Waste enters mixed. Valuable recyclables leave separated.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">The Problem</div>
+          <h2>Recycling fails because cities depend on perfect human behavior.</h2>
+          <p>
+            In real life, people are busy. They do not always stop to carefully separate plastic, cans, food waste,
+            and trash. That creates contaminated recycling streams, more landfill waste, and more emissions from inefficient processing.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="info-card reveal">
+            <h3>Too Much Friction</h3>
+            <p>
+              Sustainable behavior often requires extra effort. If recycling feels inconvenient, many people skip it.
+            </p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>Contamination</h3>
+            <p>
+              When food waste or non-recyclables mix with recyclables, entire batches can become harder or more expensive to process.
+            </p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>City-Scale Waste</h3>
+            <p>
+              In dense cities like NYC, even a small improvement in sorting accuracy can create a large environmental benefit at scale.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="section alt-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">The Solution</div>
+          <h2>CivicSort AI makes recycling automatic at the infrastructure level.</h2>
+          <p>
+            Instead of expecting every resident to sort perfectly, CivicSort AI uses physical separation,
+            computer vision, robotics, and human quality control to process mixed waste more intelligently.
+          </p>
+        </div>
+
+        <div class="solution-banner reveal">
+          <div class="solution-quote">
+            “CivicSort AI turns recycling from a behavior problem into an infrastructure problem.”
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="feature-panel reveal">
+            <h3>What it is</h3>
+            <p>
+              A smart sorting station for apartment buildings, schools, campuses, sanitation transfer points,
+              or neighborhood waste hubs.
+            </p>
+            <ul>
+              <li>Accepts mixed waste input</li>
+              <li>Separates high-value recyclables automatically</li>
+              <li>Flags uncertain items for human review</li>
+              <li>Collects data to improve over time</li>
+            </ul>
+          </div>
+
+          <div class="feature-panel reveal">
+            <h3>Why it stands out</h3>
+            <p>
+              Most sustainability ideas depend on changing habits. This one changes the system itself.
+            </p>
+            <ul>
+              <li>Reduces dependence on manual sorting</li>
+              <li>Works with real city waste behavior</li>
+              <li>Combines feasible hardware with scalable software</li>
+              <li>Can start small and expand citywide</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">How It Works</div>
+          <h2>A realistic multi-stage sorting pipeline</h2>
+          <p>
+            The system is designed to sound like something a startup could actually prototype and pilot.
+            Not magic. Not fantasy. A credible automation workflow.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-number">01</div>
+            <div class="timeline-content">
+              <h3>Mixed waste enters on a conveyor</h3>
+              <p>
+                Users throw waste into one intake stream. The system moves items across a conveyor for staged analysis and sorting.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-number">02</div>
+            <div class="timeline-content">
+              <h3>Magnetic separator removes ferrous metal</h3>
+              <p>
+                Steel cans and other magnetic metals are removed first using a simple, robust physical process.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-number">03</div>
+            <div class="timeline-content">
+              <h3>AI vision system identifies remaining materials</h3>
+              <p>
+                A camera system scans each item and classifies likely material types such as plastic bottle, aluminum can,
+                paper carton, food waste, or contamination. This is where the “AI” actually matters.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-number">04</div>
+            <div class="timeline-content">
+              <h3>Robotic arm picks high-confidence recyclables</h3>
+              <p>
+                A robotic pick-and-place arm removes target items like plastic containers and aluminum cans from the stream
+                and drops them into the correct bins.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-number">05</div>
+            <div class="timeline-content">
+              <h3>Human QA handles low-confidence edge cases</h3>
+              <p>
+                Items the model is not confident about go to a final review lane. That makes the system realistic,
+                safer, and easier to defend in front of judges.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-number">06</div>
+            <div class="timeline-content">
+              <h3>Data dashboard improves operations over time</h3>
+              <p>
+                The system logs contamination rates, sorting accuracy, material volume, and high-mistake item types,
+                helping cities improve both operations and public education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">Technology</div>
+          <h2>Code, engineering, and automation all have a clear role</h2>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-card reveal">
+            <h3>Computer Vision Model</h3>
+            <p>
+              Trained to detect and classify visible waste items by material and object type.
+            </p>
+          </article>
+
+          <article class="tech-card reveal">
+            <h3>Camera + Inference System</h3>
+            <p>
+              Could use a vision device like Limelight or another embedded camera pipeline for fast classification.
+            </p>
+          </article>
+
+          <article class="tech-card reveal">
+            <h3>Robotic Pick Arm</h3>
+            <p>
+              Executes simple pick-and-place actions for the most valuable recyclable targets.
+            </p>
+          </article>
+
+          <article class="tech-card reveal">
+            <h3>Conveyor + Sensors</h3>
+            <p>
+              Controls item flow and gives the vision system stable opportunities to inspect objects.
+            </p>
+          </article>
+
+          <article class="tech-card reveal">
+            <h3>Sorting Logic</h3>
+            <p>
+              Confidence thresholds decide whether an item is auto-sorted or sent to human QA.
+            </p>
+          </article>
+
+          <article class="tech-card reveal">
+            <h3>Analytics Dashboard</h3>
+            <p>
+              Tracks performance, contamination, trends, and system improvement over time.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">Environmental Impact</div>
+          <h2>Small automation gains become huge at city scale</h2>
+          <p>
+            The point is not that one machine saves the planet. The point is that a repeatable system, deployed across a city,
+            reduces waste and improves recycling quality without relying on perfect participation.
+          </p>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card reveal">
+            <div class="impact-icon">♻</div>
+            <h3>Cleaner recycling streams</h3>
+            <p>Less contamination means more material can actually be recovered and reused.</p>
+          </div>
+
+          <div class="impact-card reveal">
+            <div class="impact-icon">🗑</div>
+            <h3>Less landfill waste</h3>
+            <p>More plastic and metal are captured before they end up buried or burned.</p>
+          </div>
+
+          <div class="impact-card reveal">
+            <div class="impact-icon">🌆</div>
+            <h3>Better fit for dense cities</h3>
+            <p>NYC-scale infrastructure improvements matter because volume is so high.</p>
+          </div>
+
+          <div class="impact-card reveal">
+            <div class="impact-icon">📊</div>
+            <h3>Data-driven sustainability</h3>
+            <p>Cities can identify contamination hotspots and improve operations over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">Why NYC</div>
+          <h2>New York is exactly the kind of city that needs this</h2>
+          <p>
+            Dense buildings, huge daily waste volume, limited space, and inconsistent participation make NYC a perfect case for smarter waste infrastructure.
+          </p>
+        </div>
+
+        <div class="nyc-panel reveal">
+          <div class="nyc-left">
+            <h3>Best pilot locations</h3>
+            <ul>
+              <li>Apartment complexes</li>
+              <li>Public schools and campuses</li>
+              <li>Transit hubs</li>
+              <li>Commercial food courts</li>
+              <li>Sanitation transfer or preprocessing centers</li>
+            </ul>
+          </div>
+          <div class="nyc-right">
+            <h3>Why judges should care</h3>
+            <p>
+              This is not just an app. It is a city-centered physical system with software, AI, automation, and environmental impact built together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">Demo View</div>
+          <h2>Website demo section for your pitch</h2>
+          <p>
+            This visual is built directly into the site so you do not need an external image just to look polished.
+          </p>
+        </div>
+
+        <div class="demo-board reveal">
+          <div class="demo-left">
+            <h3>Live Processing Concept</h3>
+            <div class="mock-stream">
+              <div class="waste waste-plastic">Plastic Bottle</div>
+              <div class="waste waste-metal">Steel Can</div>
+              <div class="waste waste-aluminum">Aluminum Can</div>
+              <div class="waste waste-organic">Food Waste</div>
+              <div class="waste waste-carton">Carton</div>
+            </div>
+            <p class="demo-note">
+              In a real prototype, computer vision would classify these items and route them by confidence level.
+            </p>
+          </div>
+
+          <div class="demo-right">
+            <div class="dashboard-card">
+              <h3>Sorting Dashboard</h3>
+              <div class="dash-row">
+                <span>Plastic captured</span>
+                <div class="bar"><div class="fill fill-1"></div></div>
+              </div>
+              <div class="dash-row">
+                <span>Metal captured</span>
+                <div class="bar"><div class="fill fill-2"></div></div>
+              </div>
+              <div class="dash-row">
+                <span>Contamination flagged</span>
+                <div class="bar"><div class="fill fill-3"></div></div>
+              </div>
+              <div class="dash-row">
+                <span>Human review required</span>
+                <div class="bar"><div class="fill fill-4"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="container final-grid">
+        <div class="reveal">
+          <div class="eyebrow">Future Expansion</div>
+          <h2>Where this could go next</h2>
+          <ul class="future-list">
+            <li>Better detection of difficult materials</li>
+            <li>Integration with city sanitation data</li>
+            <li>Building-level sustainability dashboards</li>
+            <li>Gamified reporting for neighborhoods or schools</li>
+            <li>Smaller pilot units before large-scale deployment</li>
+          </ul>
+        </div>
+
+        <div class="pitch-card reveal">
+          <h3>One-line pitch</h3>
+          <p>
+            CivicSort AI is a smart urban waste-sorting system that combines physical separation, AI vision,
+            and robotics to make recycling easier, cleaner, and more effective in cities like New York.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>CivicSort AI</strong><br />
+        Built for the “Code the City Greener” Createathon
+      </div>
+      <div>
+        Designed as a startup-style sustainability concept for NYC
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
